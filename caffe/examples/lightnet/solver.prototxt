@@ -1,0 +1,15 @@
+net: "examples/lightnet/train.prototxt"
+base_lr: 0.01
+lr_policy: "step"
+gamma: 0.1
+iter_size: 1
+stepsize: 100000
+display: 20
+average_loss: 20
+max_iter: 150000
+momentum: 0.9
+weight_decay: 0.0001
+snapshot: 10000
+snapshot_prefix: "examples/lightnet/snapshots/lightnet"
+# uncomment the following to default to CPU mode solving
+# solver_mode: CPU

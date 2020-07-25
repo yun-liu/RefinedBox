@@ -1,0 +1,7 @@
+EXP_DIR: refined_box_alt_opt
+TRAIN:
+  BG_THRESH_LO: 0.0
+  REFINED_BOX: True
+TEST:
+  REFINED_BOX: True
+  RERANK_PROPOSAL: True

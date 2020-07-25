@@ -1,0 +1,15 @@
+*.pyc
+*.tgz
+*.pkl
+*.mat
+*.caffemodel
+.ipynb_checkpoints
+lib/build
+lib/nms/*.c
+lib/nms/*.cpp
+lib/nms/*.so
+lib/pycocotools/_mask.c
+lib/pycocotools/_mask.so
+lib/utils/cython_bbox.c
+lib/utils/cython_bbox.so
+output/*
