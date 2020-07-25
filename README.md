@@ -53,7 +53,8 @@ If you find RefinedBox useful in your research, please consider citing:
     cd refined_box
     ln -s YOUR_PROPOSAL_DATA_PATH mat_data
     ```
-Otherwise, you can also change the proposal data path by modifying `__C.TRAIN.RERANK_PROP_PATH` and `__C.TEST.RERANK_PROP_PATH` in `lib/fast_rcnn/config.py`.
+    
+    Otherwise, you can also change the proposal data path by modifying `__C.TRAIN.RERANK_PROP_PATH` and `__C.TEST.RERANK_PROP_PATH` in `lib/fast_rcnn/config.py`.
 
 5. Run the following command to execute the script `experiments/scripts/refined_box_alt_opt.sh` for training and testing RefinedBox on the VOC2007 dataset:
 
