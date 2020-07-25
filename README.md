@@ -43,7 +43,7 @@ If you find RefinedBox useful in your research, please consider citing:
     
 2. Follow the well-known [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn) repository to install this software, because this code is based on Faster R-CNN.
 
-3. Download the precomputed edge boxes proposals here and put the extracted files in the `data` folder.
+3. Download the precomputed edge boxes proposals for the VOC20017 dataset [here](https://drive.google.com/file/d/1IIMN9_BV8um5e-9zcVABumLkSwjQT4fp/view?usp=sharing) and put the extracted files in the `data` folder.
 
 4. Link the proposal data to `refined_box/mat_data` by running 
 
