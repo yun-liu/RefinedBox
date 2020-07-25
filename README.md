@@ -34,6 +34,36 @@ If you find RefinedBox useful in your research, please consider citing:
 	  url={https://doi.org/10.1007/s41095-018-0120-1}
 	 }
 
+### Installation
+
+1. Clone the RefinedBox repository
+    ```Shell
+    git clone https://github.com/yun-liu/RefinedBox.git
+    ```
+    
+2. Follow the well-known [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn) repository to install this software, because this code is based on Faster R-CNN.
+
+3. Download the precomputed edge boxes proposals here and put the extracted files in the `data` folder.
+
+4. Link the proposal data to `refined_box/mat_data` by running 
+
+    ```Shell
+    cd RefinedBox_ROOT_PATH/data
+    mkdir refined_box
+    cd refined_box
+    ln -s YOUR_PROPOSAL_DATA_PATH mat_data
+    ```
+Otherwise, you can also change the proposal data path by modifying `__C.TRAIN.RERANK_PROP_PATH` and `__C.TEST.RERANK_PROP_PATH` in `lib/fast_rcnn/config.py`.
+
+5. Run the following command to execute the script `experiments/scripts/refined_box_alt_opt.sh` for training and testing RefinedBox on the VOC2007 dataset:
+
+    ```Shell
+    cd RefinedBox_ROOT_PATH
+    ./experiments/scripts/refined_box_alt_opt.sh YOUR_GPU_ID VGG16 voc_2007
+    ```
+    
+6. Run RefinedBox with other proposal generation methods following the above way. Note that you should prepare your proposal data first in the format required by the [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn) repository.
+
 ### Acknowledgment
 
 This code is based on Faster R-CNN. Thanks to the contributors of Faster R-CNN.
